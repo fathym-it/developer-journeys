@@ -2,6 +2,6 @@
   "name": "@fathym-it/developer-journeys",
   "version": "0.0.1",
   "scripts": {
-    "deploy:ide": "npm version patch && npm publish ./ --access public"
+    "deploy": "npm version patch && npm publish ./ --access public"
   }
 }

@@ -7,8 +7,10 @@
   </head>
   <body>
     <script>
-      if (location.href.endsWith('/')) location.href = location.href + 'developer';
-      else location.href = location.href + '/developer';
+      var base = (document.querySelector('base') || {}).href || '';
+
+      if (location.href.endsWith('/')) location.href = '/' + base + 'developer';
+      else location.href = '/' + base + '/developer';
     </script>
   </body>
 </html>

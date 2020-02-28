@@ -1,3 +1,4 @@
 <script>
-  location.href = 'developer';
+  if (location.href.endsWith('/')) location.href = 'developer';
+  else location.href = '/developer';
 </script>

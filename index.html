@@ -7,8 +7,8 @@
   </head>
   <body>
     <script>
-      //location.href = '/journeys/developer';
-      console.log(location.href);
+      if (location.href.endsWith('/')) location.href = location.href + 'developer';
+      else location.href = location.href + '/developer';
     </script>
   </body>
 </html>
